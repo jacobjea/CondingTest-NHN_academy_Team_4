@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class BJ_30805{
+public class 사전_순_최대_공통_부분_수열{
     static StringTokenizer st;
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static StringBuilder sb = new StringBuilder();
