@@ -20,5 +20,6 @@ public class 수_정렬하기_2 {
             System.out.println(i);
         }
         br.close();
+        
     }
 }
