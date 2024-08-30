@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class BJ2239{
+public class Sudoku_2239{
     static StringTokenizer st;
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static StringBuilder sb = new StringBuilder();
