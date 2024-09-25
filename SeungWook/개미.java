@@ -38,16 +38,25 @@ public class 개미 {
         Ant[] newAnts = ants.clone();
         for(int i = 0; i < t; i++){
             for(int j = 0; j < ants.length-1; j++){
+                // a그룹만 검사
+                if (!ants[j].getGroup().equals("a")) {
+                    continue;
+                }
+
                 if (ants[j].getGroup() != ants[j+1].getGroup()) {
                     Ant temp = newAnts[j];
                     newAnts[j] = newAnts[j+1];
                     newAnts[j+1] = temp;
-                    j++;
                 }
             }
             ants = newAnts.clone();
         }
-        System.out.println(Arrays.toString(newAnts));
+        
+        StringBuilder sb = new StringBuilder();
+        for(Ant ant : newAnts){
+            sb.append(ant.name);
+        }
+        System.out.println(sb.toString());
 
     }
     static class Ant{
